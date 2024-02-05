@@ -99,7 +99,7 @@ const Header = () => {
                 style={{ marginRight: "10px" }}
               />
               <Link to='/' style={{ textDecoration: 'none', color: 'inherit' }}>
-               AapkaAdhikar
+               MySchemeReplica
               </Link>
             </Typography>
             <Stack direction="row" spacing={47} alignItems="center" justifyContent="center">
