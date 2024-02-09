@@ -1,8 +1,16 @@
 import React from "react";
 import './abouthome.css';
 import Button from '@mui/material/Button';
+import { Link } from "react-router-dom";
+
 
 const AboutHome  = () => {
+
+    const handleViewMoreClick = () => {
+        window.scrollTo(0, 0); // Scroll to the top of the page
+      };
+
+
     return (
         <div>
          <h4 className="green">About</h4>
@@ -29,8 +37,11 @@ const AboutHome  = () => {
                 backgroundColor: '#c2fae4', // Set the background color to white
                 color: 'black', // Set the text color to black or your preferred color
                 }}
+                onClick={handleViewMoreClick}
             >
-                View More
+            <Link to='/about'  style={{ textDecoration: 'none', color: 'inherit' }}>
+              View More
+             </Link>
             </Button>
             </a>
 

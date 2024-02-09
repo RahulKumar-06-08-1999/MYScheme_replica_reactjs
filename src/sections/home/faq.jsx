@@ -28,8 +28,8 @@ const FAQ = () => {
               >
                 Frequently Asked Questions
               </Typography>
-
-        </div>      
+          </div>     
+           
         <Container sx={{ mt: 2 }}>
           <Box
             sx={{

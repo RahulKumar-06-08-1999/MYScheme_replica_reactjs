@@ -7,6 +7,17 @@
   height: 600px;
 }
 
+.arrow-left {
+  /* Styles for the arrow when clicked */
+  color: rgb(102, 46, 46); /* Change to the desired color */
+  font-size: 37px; 
+}
+
+.arrow-right {
+  /* Styles for the arrow when clicked */
+  color: rgb(102, 46, 46); /* Change to the desired color */
+  font-size: 37px; 
+}
 .slide {
   /* border-radius: 0.5rem; */
   box-shadow: 0px 0px 7px #666;

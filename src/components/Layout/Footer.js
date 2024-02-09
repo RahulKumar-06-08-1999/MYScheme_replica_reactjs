@@ -1,30 +1,16 @@
 import Box from "@mui/material/Box";
-import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
-import Divider from "@mui/material/Divider";
-// import { alpha } from "@mui/material/styles";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Unstable_Grid2";
-// import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-
-// import { paths } from "src/routes/paths";
-// import { usePathname } from "src/routes/hooks";
-// import { RouterLink } from "src/routes/components";
-
-// import { _socials } from "src/_mock";
-
-// import Logo from "src/components/logo";
-// import Iconify from "src/components/iconify";
-
-// ----------------------------------------------------------------------
+import Link from "@mui/material/Link"; // Import Link from @mui/material
 
 const LINKS = [
   {
     headline: "Minimal",
     children: [
-      { name: "About us", href: "/" },
-      { name: "Contact us", href: "/" },
+      { name: "About us", href: "/about" },
+      { name: "Contact us", href: "/contact" },
       { name: "FAQs", href: "/faq" },
     ],
   },
@@ -37,17 +23,12 @@ const LINKS = [
   },
   {
     headline: "Contact",
-    children: [{ name: "support@minimals.cc", href: "#" }],
+    children: [{ name: "rahulkrprasad18@gmail.com", href: "#" }],
   },
 ];
 
-// ----------------------------------------------------------------------
-
 export default function Footer() {
-  // const pathname = usePathname();
-
-  // const homePage = pathname === "/";
-
+  
   const mainFooter = (
     <Box
       component="footer"
@@ -57,8 +38,6 @@ export default function Footer() {
         clipPath: "polygon(0 0, 100% 17%, 100% 100%, 0% 100%)",
       }}
     >
-      <Divider />
-
       <Container
         sx={{
           pt: 10,
@@ -66,8 +45,6 @@ export default function Footer() {
           textAlign: { xs: "center", md: "unset" },
         }}
       >
-        {/* <Logo sx={{ mb: 3 }} /> */}
-
         <Grid
           container
           justifyContent={{
@@ -84,32 +61,10 @@ export default function Footer() {
                 mx: { xs: "auto", md: "unset" },
               }}
             >
-              The starting point for your next project with Minimal UI Kit,
-              built on the newest version of Material-UI ©, ready to be
-              customized to your style.
+              Developed by me for learning purposes in MERN development, the replica of the
+              website https://www.myscheme.gov.in/ serves as a valuable project to showcase 
+              on my resume.
             </Typography>
-
-            <Stack
-              direction="row"
-              justifyContent={{ xs: "center", md: "flex-start" }}
-              sx={{
-                mt: 3,
-                mb: { xs: 5, md: 0 },
-              }}
-            >
-              {/* {_socials.map((social) => (
-                <IconButton
-                  key={social.name}
-                  sx={{
-                    "&:hover": {
-                      bgcolor: alpha(social.color, 0.08),
-                    },
-                  }}
-                >
-                  <Iconify color={social.color} icon={social.icon} />
-                </IconButton>
-              ))} */}
-            </Stack>
           </Grid>
 
           <Grid xs={12} md={6}>
@@ -132,9 +87,8 @@ export default function Footer() {
                   {list.children.map((link) => (
                     <Link
                       key={link.name}
-                      // component={RouterLink}
                       href={link.href}
-                      color="common.white"
+                      sx={{ color: "white" }} // Apply custom style to change color
                       variant="body2"
                     >
                       {link.name}
@@ -147,7 +101,9 @@ export default function Footer() {
         </Grid>
 
         <Typography color="common.white" variant="body2" sx={{ mt: 10 }}>
-          © 2021. All rights reserved
+        © 2024. All rights reserved to https://www.myscheme.gov.in/. This replica 
+        has been created for learning purposes only and is not 
+        intended for commercial use.
         </Typography>
       </Container>
     </Box>

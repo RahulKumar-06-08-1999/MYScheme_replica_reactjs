@@ -8,10 +8,15 @@ import FAQImage from "../../images/faq.svg";
 import { Link } from "react-router-dom";
 
 
+
 // ----------------------------------------------------------------------
 
 
 export default function FAQHOME() {
+
+  const handleViewMoreClick = () => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  };
 
     const styles = {
         titleTextColor: "blue",
@@ -66,7 +71,7 @@ export default function FAQHOME() {
             {/* Image on the left */}
             <img
               src={FAQImage}
-              alt="FAQ Image"
+              alt="FAQ"
               style={{ maxWidth: "40%", marginRight: "10px" , marginBottom: "50px"}}
             />
   
@@ -85,13 +90,14 @@ export default function FAQHOME() {
                 variant="contained"
                 size="large"
                 style={{
-                marginLeft: '750px',
-                marginTop: '17px',
-                padding: '2%',
-                fontWeight: 'bold',
-                backgroundColor: '#89ffac', // Set the background color to white
-                color: 'black', // Set the text color to black or your preferred color
+                  marginLeft: '750px',
+                  marginTop: '17px',
+                  padding: '2%',
+                  fontWeight: 'bold',
+                  backgroundColor: '#89ffac', // Set the background color to white
+                  color: 'black', // Set the text color to black or your preferred color
                 }}
+                onClick={handleViewMoreClick} // Scroll to the top before opening FAQ
             >
              <Link to='/faq'  style={{ textDecoration: 'none', color: 'inherit' }}>
               View More

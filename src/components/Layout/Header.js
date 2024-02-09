@@ -23,6 +23,9 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
 
+  const handleViewMoreClick = () => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  };
 
   const [mobileOpen, setMobileOpen] = useState(false);
   // hndle menu click
@@ -131,6 +134,7 @@ const Header = () => {
                     color="success"
                     endIcon={<DoubleArrowIcon />}
                     style={{ color: "white" }}
+                    onClick={handleViewMoreClick}
                   >
                     <Link to='/signup' style={{ textDecoration: 'none', color: 'inherit' }}>
                     Sign in

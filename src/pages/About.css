@@ -1,0 +1,27 @@
+.Main {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); 
+    margin-top: 6rem;
+}
+
+.green{
+    color: green;
+    padding-left: 5rem;
+    font-weight: 850;
+    font-size:2rem;
+    margin-top: 4rem;
+    margin-bottom: -3rem;
+    
+}
+
+.one {
+    grid-column: span 7;
+    margin-top: -1rem;
+    margin-left: 4rem;
+}
+
+.video-container {
+    margin-left: 15rem;
+    margin-top: -2rem;
+    padding-right: 1rem;
+}
